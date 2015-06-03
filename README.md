@@ -4,12 +4,11 @@
 
 Inspired Rails migrations, Scripted was created to run JS scripts only once, based on scripts already saved in the collection scripts in MongoDB.
 
-Example:
+Example: [1433298714535-for.js][for]
 ```sh
 $ scripted -c for
 $ scripts/1433298714535-for.js created
 ```
-[1433298714535-for.js](https://github.com/danielrohers/task-scripted/blob/master/examples/scripts/1433298714535-for.js)
 
 ## Installation
 
@@ -51,3 +50,5 @@ export MONGO_SCRIPTED=mongodb://localhost:27017/scripted
 ## License
 
 [MIT](LICENSE)
+
+[for]:https://github.com/danielrohers/task-scripted/blob/master/examples/scripts/1433298714535-for.js
