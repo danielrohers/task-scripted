@@ -1,6 +1,6 @@
 # task-scripted
 
-[Scripted'](https://www.npmjs.com/package/task-scripted) application to run JS files once..
+[Scripted'](https://www.npmjs.com/package/task-scripted) application to run JS files once.
 
 ## Installation
 
