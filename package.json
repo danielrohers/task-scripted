@@ -1,0 +1,41 @@
+{
+  "name": "task-scripted",
+  "version": "1.0.6",
+  "description": "Scripted' application to run JS files once.",
+  "author": "Daniel Rôhers Moura <rohersmoura@gmail.com> (https://github.com/danielrohers)",
+  "keywords": [
+    "script",
+    "js",
+    "javascript",
+    "task",
+    "migrate",
+    "script",
+    "node"
+  ],
+  "license": "MIT",
+  "main": "bin/scripted",
+  "preferGlobal": true,
+  "bin": {
+    "scripted": "./bin/scripted"
+  },
+  "files": [
+    "bin/",
+    "config/",
+    "lib/",
+    "model/",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielrohers/task-scripted.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielrohers/task-scripted/issues"
+  },
+  "homepage": "https://www.npmjs.com/package/task-scripted",
+  "dependencies": {
+    "async": "^1.1.0",
+    "commander": "^2.8.1",
+    "mongoose": "^3.8.x"
+  }
+}

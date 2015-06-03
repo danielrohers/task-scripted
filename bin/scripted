@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var program = require('commander');
+var create = require('../lib/create');
+
+exports.finished = function () {
+    process.kill(0);
+}
+
+exports.pathScripts = 'scripts';
+
+program
+    .version('0.0.1')
+    .option('-c, --create', 'Create script')
+    .option('-e, --execute', 'Execute scripts')
+    .option('-m, --mongoose', 'Create mongoose.json (optional)')
+    .option('-s, --scripted', 'Create scripted-template.js (optional)')
+    .parse(process.argv);
+
+if (!process.argv.slice(2).length)
+    return program.outputHelp();
+
+if (program.create)
+    return create.script();
+
+if (program.execute)
+    return require('../lib/read')();
+
+if (program.mongoose)
+    return create.mongoose();
+
+if (program.scripted)
+    return create.scripted();
