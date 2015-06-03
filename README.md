@@ -1,4 +1,4 @@
-# task-scripted
+# Scripted
 
 [Scripted'](https://www.npmjs.com/package/task-scripted) application to run JS files once.
 
@@ -46,6 +46,10 @@ export MONGO_SCRIPTED=mongodb://localhost:27017/scripted
     -e, --execute   Execute scripts
     -m, --mongoose  Create mongoose.json (optional)
     -s, --scripted  Create scripted-template.js (optional)
+
+## Technologies
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.org/)
 
 ## License
 
