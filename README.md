@@ -2,10 +2,37 @@
 
 [Scripted'](https://www.npmjs.com/package/task-scripted) application to run JS files once.
 
+Inspired Rails migrations, Scripted was created to run JS scripts only once, based on scripts already saved in the collection scripts in MongoDB.
+
+Example:
+```sh
+$ scripted -c for
+$ scripts/1433298714535-for.js created
+```
+[1433298714535-for.js](https://github.com/danielrohers/task-scripted/blob/master/examples/scripts/1433298714535-for.js)
+
 ## Installation
 
 ```sh
 $ npm install -g task-scripted
+```
+
+## Configuration
+You must configure MongoDB, it can be done using mongoose.json or environment variable MONGO_SCRIPTED.
+
+##### mongoose.json
+```sh
+$ scripted -m
+```
+```json
+{
+  "url" : "mongodb://localhost:27017/scripted"
+}
+```
+##### Environment variable
+In your .bash_profile or similar
+```shell
+export MONGO_SCRIPTED=mongodb://localhost:27017/scripted
 ```
 
 ## Command Line Options
