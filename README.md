@@ -4,6 +4,9 @@
 
 Inspired Rails migrations, Scripted was created to run JS scripts only once, based on scripts already saved in the collection scripts in MongoDB.
 
+[![npm version](https://badge.fury.io/js/task-scripted.svg)](https://badge.fury.io/js/task-scripted)
+[![npm](https://img.shields.io/npm/dt/task-scripted.svg)](https://www.npmjs.com/package/task-scripted)
+
 Example: [1433298714535-for.js][for]
 ```sh
 $ scripted -c for
