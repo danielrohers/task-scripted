@@ -1,6 +1,6 @@
 {
   "name": "task-scripted",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Scripted' application to run JS files once.",
   "author": "Daniel Rôhers Moura <rohersmoura@gmail.com> (https://github.com/danielrohers)",
   "keywords": [
